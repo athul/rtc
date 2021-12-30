@@ -1,0 +1,78 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:TICKET-{bus_id}-{######}",
+ "creation": "2021-12-28 17:14:57.777186",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bus_id",
+  "time",
+  "column_break_3",
+  "from",
+  "to",
+  "fare"
+ ],
+ "fields": [
+  {
+   "fieldname": "bus_id",
+   "fieldtype": "Link",
+   "label": "Bus ID",
+   "options": "Bus"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "now",
+   "fieldname": "time",
+   "fieldtype": "Datetime",
+   "label": "Time"
+  },
+  {
+   "fieldname": "from",
+   "fieldtype": "Link",
+   "label": "From",
+   "options": "Bus Stops"
+  },
+  {
+   "fieldname": "to",
+   "fieldtype": "Link",
+   "label": "To",
+   "options": "Bus Stops"
+  },
+  {
+   "default": "10",
+   "fieldname": "fare",
+   "fieldtype": "Currency",
+   "label": "Fare"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-28 21:39:39.727158",
+ "modified_by": "Administrator",
+ "module": "RTC",
+ "name": "Bus Ticket",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

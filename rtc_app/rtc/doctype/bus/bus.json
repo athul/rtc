@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "format:{bus_name}-{bus_number}",
+ "creation": "2021-12-28 15:11:08.475077",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bus_number",
+  "bus_name",
+  "type",
+  "column_break_3",
+  "start_point",
+  "end_point",
+  "section_break_6",
+  "stops",
+  "availability"
+ ],
+ "fields": [
+  {
+   "fieldname": "bus_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Bus Number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bus_name",
+   "fieldtype": "Data",
+   "label": "Bus Name"
+  },
+  {
+   "fieldname": "start_point",
+   "fieldtype": "Link",
+   "label": "Start Point",
+   "options": "Bus Stops"
+  },
+  {
+   "fieldname": "end_point",
+   "fieldtype": "Link",
+   "label": "End Point",
+   "options": "Bus Stops"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Private",
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "KSRTC LS\nKSRTC Ordinary\nKSRTC FP\nKSRTC SF\nKSRTC T2T\nPrivate"
+  },
+  {
+   "fieldname": "availability",
+   "fieldtype": "Table",
+   "label": "Availability",
+   "options": "Bus Availability"
+  },
+  {
+   "fieldname": "stops",
+   "fieldtype": "Table",
+   "label": "Stops",
+   "options": "Bus Timing Table"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-29 08:08:28.992298",
+ "modified_by": "Administrator",
+ "module": "RTC",
+ "name": "Bus",
+ "name_case": "UPPER CASE",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "bus_name"
+}

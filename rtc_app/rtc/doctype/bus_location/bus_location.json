@@ -1,0 +1,70 @@
+{
+ "actions": [],
+ "autoname": "format: {bus_name}-{DD}-{MM}-{########}",
+ "creation": "2021-12-29 11:54:11.345912",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bus_name",
+  "bus_id",
+  "column_break_3",
+  "time",
+  "location"
+ ],
+ "fields": [
+  {
+   "fieldname": "bus_name",
+   "fieldtype": "Data",
+   "label": "Bus Name"
+  },
+  {
+   "default": "now",
+   "fieldname": "time",
+   "fieldtype": "Datetime",
+   "label": "TIme"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "bus_id",
+   "fieldtype": "Link",
+   "label": "Bus Name",
+   "options": "Bus",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-12-29 12:40:32.285384",
+ "modified_by": "Administrator",
+ "module": "RTC",
+ "name": "Bus Location",
+ "name_case": "UPPER CASE",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
